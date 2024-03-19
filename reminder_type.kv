@@ -1,0 +1,21 @@
+#:kivy
+<ReminderType>:
+    orientation: 'vertical'
+
+    Label:
+        text: "CHOOSE YOUR REMINDER"
+        font_size: '28sp'
+        size_hint_y: None
+        height: 40
+
+    Button:
+        text: "HEALTH CHECK UP"
+        on_release: root.health_check_up()
+
+    Button:
+        text: "MEDICINE"
+        on_release: root.medicine()
+
+    Button:
+        text: "LAB TEST"
+        on_release: root.lab_test()
